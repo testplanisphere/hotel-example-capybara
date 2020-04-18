@@ -100,11 +100,15 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 
+  config.before(:context) do
+    page.driver.resize_window_to(page.driver.current_window_handle, 1920, 1080)
+  end
 end
 
 # Capybara settings
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome_headless
-  config.run_server = false
-  config.app_host   = 'https://hotel.testplanisphere.dev'
+  config.app_host = 'https://hotel.testplanisphere.dev'
 end
+
+require 'pages/app'

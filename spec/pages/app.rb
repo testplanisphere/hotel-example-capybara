@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pages/top_page'
 require 'pages/login_page'
 require 'pages/my_page'

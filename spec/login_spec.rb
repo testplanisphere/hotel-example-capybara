@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 feature 'ログイン画面テスト' do
   given(:app) { App.new }
 

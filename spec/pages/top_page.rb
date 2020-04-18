@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Top < SitePrism::Page
   set_url '/'
 

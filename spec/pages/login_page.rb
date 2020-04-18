@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Login < SitePrism::Page
   element :email, '#email'
   element :password, '#password'

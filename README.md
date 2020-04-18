@@ -39,14 +39,21 @@ Ruby
 
 ChromeDriverはダウンロード・展開して環境変数`PATH`の通った場所においてください。
 
-#### macOS/Linux
+#### 依存ライブラリのインストール
 
 ```
-rake
+gem install bundler
+bundle install
 ```
 
-##### 静的解析の実行
+#### テストの実行
 
 ```
-rake rubocop
+bundle exec rake
+```
+
+#### 静的解析の実行
+
+```
+bundle exec rake rubocop
 ```

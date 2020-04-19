@@ -8,7 +8,7 @@ feature 'マイページ' do
 
   scenario '定義済みユーザの情報が表示されること_ichiro' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'ichiro@example.com'
     app.login.password.set 'password'
     app.login.submit.click
@@ -25,7 +25,7 @@ feature 'マイページ' do
 
   scenario '定義済みユーザの情報が表示されること_sakura' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'sakura@example.com'
     app.login.password.set 'pass1234'
     app.login.submit.click
@@ -42,7 +42,7 @@ feature 'マイページ' do
 
   scenario '定義済みユーザの情報が表示されること_jun' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'jun@example.com'
     app.login.password.set 'pa55w0rd!'
     app.login.submit.click
@@ -59,7 +59,7 @@ feature 'マイページ' do
 
   scenario '定義済みユーザの情報が表示されること_yoshiki' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'yoshiki@example.com'
     app.login.password.set 'pass-pass'
     app.login.submit.click
@@ -76,7 +76,7 @@ feature 'マイページ' do
 
   scenario '新規登録したユーザの情報が表示されること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set 'new-user@gmail.com'
     app.signup.password.set '11111111'
     app.signup.password_confirmation.set '11111111'
@@ -101,7 +101,7 @@ feature 'マイページ' do
 
   scenario 'アイコン設定で画像以外のファイルはエラーとなること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'new-user@gmail.com'
     app.login.password.set '11111111'
     app.login.submit.click
@@ -114,7 +114,7 @@ feature 'マイページ' do
 
   scenario 'アイコン設定で10KBを越えるファイルはエラーとなること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'new-user@gmail.com'
     app.login.password.set '11111111'
     app.login.submit.click
@@ -127,7 +127,7 @@ feature 'マイページ' do
 
   scenario '設定したアイコンがマイページに表示されること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'new-user@gmail.com'
     app.login.password.set '11111111'
     app.login.submit.click
@@ -145,7 +145,7 @@ feature 'マイページ' do
 
   scenario '新規登録したユーザが削除できること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'new-user@gmail.com'
     app.login.password.set '11111111'
     app.login.submit.click

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Login < SitePrism::Page
+  section :nav, Nav
   element :email, '#email'
   element :password, '#password'
   element :submit, '#login-button'

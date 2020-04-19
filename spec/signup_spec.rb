@@ -7,7 +7,7 @@ feature '登録画面' do
 
   scenario 'ユーザの新規登録ができること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set 'new-user@gmail.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set 'password'
@@ -25,7 +25,7 @@ feature '登録画面' do
 
   scenario '必須項目を未入力にするとエラーとなること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set ''
     app.signup.password.set ''
     app.signup.password_confirmation.set ''
@@ -50,7 +50,7 @@ feature '登録画面' do
 
   scenario '指定のフォーマット外の入力でエラーとなること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set 'a'
     app.signup.password.set '1234567'
     app.signup.password_confirmation.set '1'
@@ -75,7 +75,7 @@ feature '登録画面' do
 
   scenario '登録済みのメールアドレスはエラーとなること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set 'new-user@gmail.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set 'password'
@@ -93,7 +93,7 @@ feature '登録画面' do
 
   scenario '登録済みのメールアドレスはエラーとなること' do
     app.top.load
-    app.top.signup_link.click
+    app.top.nav.signup_link.click
     app.signup.email.set 'new-user@gmail.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set '123456789'

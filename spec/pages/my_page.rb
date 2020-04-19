@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class My < SitePrism::Page
+  section :nav, Nav
   element :icon_link, '#icon-link'
   element :header, 'h2'
   element :email, '#email'

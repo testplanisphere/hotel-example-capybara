@@ -5,7 +5,7 @@ feature 'ログイン画面' do
 
   scenario '定義済みユーザでログインができること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'ichiro@example.com'
     app.login.password.set 'password'
     app.login.submit.click
@@ -15,7 +15,7 @@ feature 'ログイン画面' do
 
   scenario '未入力でエラーとなること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set ''
     app.login.password.set ''
     app.login.submit.click
@@ -26,7 +26,7 @@ feature 'ログイン画面' do
 
   scenario '未登録のユーザでエラーとなること' do
     app.top.load
-    app.top.login_link.click
+    app.top.nav.login_link.click
     app.login.email.set 'error@example.com'
     app.login.password.set 'error'
     app.login.submit.click

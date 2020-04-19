@@ -110,12 +110,13 @@ end
 
 # Capybara settings
 Capybara.register_driver :selenium_chrome_headless do |app|
-  args = []
-  args << '--headless'
-  args << '--disable-gpu' if Gem.win_platform?
+  Capybara::Selenium::Driver.load_selenium
+  options = Selenium::WebDriver::Chrome::Options.new
+  options.add_argument('headless')
+  options.add_argument('disable-gpu') if Gem.win_platform?
   # Workaround https://bugs.chromium.org/p/chromedriver/issues/detail?id=2650&q=load&sort=-id&colspec=ID%20Status%20Pri%20Owner%20Summary
-  args << '--disable-site-isolation-trials'
-  Capybara::Selenium::Driver.new(app, browser: :chrome, clear_local_storage: false, args: args)
+  options.add_argument('disable-site-isolation-trials')
+  Capybara::Selenium::Driver.new(app, browser: :chrome, clear_local_storage: false, options: options)
 end
 
 Capybara.configure do |config|

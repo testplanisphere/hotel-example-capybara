@@ -94,7 +94,8 @@ RSpec.configure do |config|
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
-  config.order = :random
+  # config.order = :random
+  config.order = :defined
 
   # Seed global randomization in this process using the `--seed` CLI option.
   # Setting this allows you to use `--seed` to deterministically reproduce
@@ -103,11 +104,20 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 
   config.before(:context) do
-    page.driver.resize_window_to(page.driver.current_window_handle, 1920, 1080)
+    current_window.resize_to(1920, 1080)
   end
 end
 
 # Capybara settings
+Capybara.register_driver :selenium_chrome_headless do |app|
+  args = []
+  args << '--headless'
+  args << '--disable-gpu' if Gem.win_platform?
+  # Workaround https://bugs.chromium.org/p/chromedriver/issues/detail?id=2650&q=load&sort=-id&colspec=ID%20Status%20Pri%20Owner%20Summary
+  args << '--disable-site-isolation-trials'
+  Capybara::Selenium::Driver.new(app, browser: :chrome, clear_local_storage: false, args: args)
+end
+
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome_headless
   config.app_host = 'https://hotel.testplanisphere.dev'

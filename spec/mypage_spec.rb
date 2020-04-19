@@ -139,8 +139,8 @@ feature 'マイページ' do
     app.icon.submit.click
 
     expect(app.my_page).to have_icon_image
-    expect(app.my_page.icon_image['width']).to eq('70')
-    expect(app.my_page.icon_image).to match_style('backgroundColor' => 'rgba(0, 0, 0, 1)')
+    expect(app.my_page.icon_image[:width]).to eq('70')
+    expect(app.my_page.icon_image).to match_style(backgroundColor: 'rgba(0, 0, 0, 1)')
   end
 
   scenario '新規登録したユーザが削除できること' do

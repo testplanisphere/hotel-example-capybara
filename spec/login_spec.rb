@@ -10,7 +10,7 @@ feature 'ログイン画面' do
     app.login.password.set 'password'
     app.login.submit.click
 
-    expect(app.my_page.header.text).to eq('マイページ')
+    expect(app.my_page.header).to have_text('マイページ')
   end
 
   scenario '未入力でエラーとなること' do
@@ -20,8 +20,8 @@ feature 'ログイン画面' do
     app.login.password.set ''
     app.login.submit.click
 
-    expect(app.login.email_message.text).to eq('このフィールドを入力してください。')
-    expect(app.login.password_message.text).to eq('このフィールドを入力してください。')
+    expect(app.login.email_message).to have_text('このフィールドを入力してください。')
+    expect(app.login.password_message).to have_text('このフィールドを入力してください。')
   end
 
   scenario '未登録のユーザでエラーとなること' do
@@ -31,7 +31,7 @@ feature 'ログイン画面' do
     app.login.password.set 'error'
     app.login.submit.click
 
-    expect(app.login.email_message.text).to eq('メールアドレスまたはパスワードが違います。')
-    expect(app.login.password_message.text).to eq('メールアドレスまたはパスワードが違います。')
+    expect(app.login.email_message).to have_text('メールアドレスまたはパスワードが違います。')
+    expect(app.login.password_message).to have_text('メールアドレスまたはパスワードが違います。')
   end
 end

@@ -4,6 +4,7 @@ require 'pages/top_page'
 require 'pages/login_page'
 require 'pages/signup_page'
 require 'pages/my_page'
+require 'pages/icon_page'
 
 class App
   def top
@@ -20,5 +21,9 @@ class App
 
   def my_page
     My.new
+  end
+
+  def icon
+    Icon.new
   end
 end

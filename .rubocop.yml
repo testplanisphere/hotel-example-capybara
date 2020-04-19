@@ -1,4 +1,4 @@
 Metrics/BlockLength:
-  Max: 100
+  Max: 150
 Layout/LineLength:
   Max: 100

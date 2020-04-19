@@ -6,6 +6,8 @@ require 'pages/signup_page'
 require 'pages/my_page'
 require 'pages/icon_page'
 require 'pages/plans_page'
+require 'pages/reserve_page'
+require 'pages/confirm_page'
 
 class App
   def top
@@ -30,5 +32,13 @@ class App
 
   def plans
     Plans.new
+  end
+
+  def reserve
+    Reserve.new
+  end
+
+  def confirm
+    Confirm.new
   end
 end

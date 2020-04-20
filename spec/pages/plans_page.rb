@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'pages/nav_section'
+
 class Plans < SitePrism::Page
   section :nav, Nav
   element :loading, '#plan-list > div[role="status"]'

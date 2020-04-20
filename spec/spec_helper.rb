@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'date'
+require 'pathname'
 require 'capybara/rspec'
 require 'site_prism'
 

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'date'
-
 feature '宿泊予約画面' do
   given(:app) { App.new }
 

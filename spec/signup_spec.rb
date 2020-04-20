@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'date'
-
 feature '登録画面' do
   given(:app) { App.new }
 

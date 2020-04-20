@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'pages/nav_section'
+
 class Login < SitePrism::Page
   section :nav, Nav
   element :email, '#email'

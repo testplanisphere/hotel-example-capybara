@@ -13,7 +13,7 @@ https://hotel.testplanisphere.dev/
 
 Ruby
 
-#### フレームワーク / Framework
+#### 自動化フレームワーク / Automation Framework
 
 * [Capybara](https://teamcapybara.github.io/capybara/)
 * [SitePrism](https://github.com/site-prism/site_prism)

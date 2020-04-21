@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-feature 'プラン一覧画面' do
+feature 'プラン一覧' do
   given(:app) { App.new }
 
   scenario '未ログイン状態でプラン一覧が表示されること' do

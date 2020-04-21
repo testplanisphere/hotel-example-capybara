@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-feature '宿泊予約画面' do
+feature '宿泊予約' do
   given(:app) { App.new }
 
   scenario '画面表示時の初期値が設定されていること_未ログイン' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-feature 'ログイン画面' do
+feature 'ログイン' do
   given(:app) { App.new }
 
   scenario '定義済みユーザでログインができること' do

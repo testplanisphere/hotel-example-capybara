@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-feature '登録画面' do
+feature '会員登録' do
   given(:app) { App.new }
 
   scenario 'ユーザの新規登録ができること' do

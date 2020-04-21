@@ -24,9 +24,12 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-gems-
-    - name: Build and test with Rake
+    - name: Install dependencies
       run: |
         gem install bundler
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
-        bundle exec rake
+    - name: Lint with rubocop
+      run: bundle exec rake rubocop
+    - name: Test with wdio
+      run: bundle exec rake

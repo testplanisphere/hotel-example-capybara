@@ -31,5 +31,5 @@ jobs:
         bundle install --jobs 4 --retry 3
     - name: Lint with rubocop
       run: bundle exec rake rubocop
-    - name: Test with wdio
+    - name: Test with capybara
       run: bundle exec rake

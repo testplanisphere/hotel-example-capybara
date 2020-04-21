@@ -35,7 +35,7 @@ Ruby
 
 #### 必須環境 / Requirements
 
-* Ruby 2.7
+* Ruby 2.6
 * Google Chrome
 * [ChromeDriver](https://chromedriver.chromium.org/downloads)
 

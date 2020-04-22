@@ -11,7 +11,7 @@ https://hotel.testplanisphere.dev/
 
 #### プログラミング言語 / Programming Language
 
-Ruby
+* Ruby
 
 #### 自動化フレームワーク / Automation Framework
 

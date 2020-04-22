@@ -1,5 +1,7 @@
 # hotel-example-capybara
 
+![capybara](https://github.com/testplanisphere/hotel-example-capybara/workflows/capybara/badge.svg)
+
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
 This project is example codes for learning test automation.
 
@@ -60,3 +62,9 @@ bundle exec rake
 ```
 bundle exec rake rubocop
 ```
+
+### 変更履歴 / Changelog
+
+#### v1.0.0 (2020-04-23)
+
+* 正式リリース

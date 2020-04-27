@@ -32,7 +32,7 @@ feature '会員登録' do
     app.signup.address.set ''
     app.signup.tel.set ''
     app.signup.gender.select '回答しない'
-    app.signup.birthday.set Date.new(2000, 1, 1)
+    app.signup.birthday.set ''
     app.signup.notification.set false
     app.signup.submit.click
 

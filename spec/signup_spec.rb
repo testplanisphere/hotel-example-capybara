@@ -6,7 +6,7 @@ feature '会員登録' do
   scenario 'ユーザの新規登録ができること' do
     app.top.load
     app.top.nav.signup_link.click
-    app.signup.email.set 'new-user@gmail.com'
+    app.signup.email.set 'new-user@example.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set 'password'
     app.signup.username.set '新規ユーザ１'
@@ -74,7 +74,7 @@ feature '会員登録' do
   scenario '登録済みのメールアドレスはエラーとなること' do
     app.top.load
     app.top.nav.signup_link.click
-    app.signup.email.set 'new-user@gmail.com'
+    app.signup.email.set 'new-user@example.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set 'password'
     app.signup.username.set '新規ユーザ１'
@@ -92,7 +92,7 @@ feature '会員登録' do
   scenario '登録済みのメールアドレスはエラーとなること' do
     app.top.load
     app.top.nav.signup_link.click
-    app.signup.email.set 'new-user@gmail.com'
+    app.signup.email.set 'new-user@example.com'
     app.signup.password.set 'password'
     app.signup.password_confirmation.set '123456789'
     app.signup.username.set '新規ユーザ１'

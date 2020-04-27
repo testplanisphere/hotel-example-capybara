@@ -74,7 +74,7 @@ feature 'マイページ' do
   scenario '新規登録したユーザの情報が表示されること' do
     app.top.load
     app.top.nav.signup_link.click
-    app.signup.email.set 'new-user@gmail.com'
+    app.signup.email.set 'new-user@example.com'
     app.signup.password.set '11111111'
     app.signup.password_confirmation.set '11111111'
     app.signup.username.set '田中花子'
@@ -86,7 +86,7 @@ feature 'マイページ' do
     app.signup.notification.set false
     app.signup.submit.click
 
-    expect(app.my_page.email).to have_text('new-user@gmail.com')
+    expect(app.my_page.email).to have_text('new-user@example.com')
     expect(app.my_page.username).to have_text('田中花子')
     expect(app.my_page.rank).to have_text('一般会員')
     expect(app.my_page.address).to have_text('神奈川県横浜市港区')
@@ -99,7 +99,7 @@ feature 'マイページ' do
   scenario 'アイコン設定で画像以外のファイルはエラーとなること' do
     app.top.load
     app.top.nav.login_link.click
-    app.login.email.set 'new-user@gmail.com'
+    app.login.email.set 'new-user@example.com'
     app.login.password.set '11111111'
     app.login.submit.click
     app.my_page.icon_link.click
@@ -112,7 +112,7 @@ feature 'マイページ' do
   scenario 'アイコン設定で10KBを越えるファイルはエラーとなること' do
     app.top.load
     app.top.nav.login_link.click
-    app.login.email.set 'new-user@gmail.com'
+    app.login.email.set 'new-user@example.com'
     app.login.password.set '11111111'
     app.login.submit.click
     app.my_page.icon_link.click
@@ -125,7 +125,7 @@ feature 'マイページ' do
   scenario '設定したアイコンがマイページに表示されること' do
     app.top.load
     app.top.nav.login_link.click
-    app.login.email.set 'new-user@gmail.com'
+    app.login.email.set 'new-user@example.com'
     app.login.password.set '11111111'
     app.login.submit.click
     app.my_page.icon_link.click
@@ -143,7 +143,7 @@ feature 'マイページ' do
   scenario '新規登録したユーザが削除できること' do
     app.top.load
     app.top.nav.login_link.click
-    app.login.email.set 'new-user@gmail.com'
+    app.login.email.set 'new-user@example.com'
     app.login.password.set '11111111'
     app.login.submit.click
 

@@ -235,8 +235,9 @@ feature '宿泊予約' do
       app.confirm.wait_until_success_modal_visible
       expect(app.confirm.modal_message).to have_text('ご来館、心よりお待ちしております。')
       sleep 1
+      win = current_window
       app.confirm.close.click
-      # expect(current_window).to become_closed
+      expect(win).to become_closed
     end
   end
 
@@ -292,8 +293,9 @@ feature '宿泊予約' do
       app.confirm.wait_until_success_modal_visible
       expect(app.confirm.modal_message).to have_text('ご来館、心よりお待ちしております。')
       sleep 1
+      win = current_window
       app.confirm.close.click
-      # expect(current_window).to become_closed
+      expect(win).to become_closed
     end
   end
 end

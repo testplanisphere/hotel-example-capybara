@@ -65,6 +65,13 @@ bundle exec rake rubocop
 
 ### 変更履歴 / Changelog
 
+#### v1.1.0 (2020-04-29)
+
+* [#3](https://github.com/testplanisphere/hotel-example-capybara/pull/3) Github ActionsにmacOSとWindowsランナーを追加
+* [#6](https://github.com/testplanisphere/hotel-example-capybara/pull/6) テストデータのアドレスをexample.comに修正
+* [#7](https://github.com/testplanisphere/hotel-example-capybara/pull/7) 日付入力が空の場合のテストを追加
+* [#9](https://github.com/testplanisphere/hotel-example-capybara/pull/9) windowsクローズのアサーションを修正
+
 #### v1.0.0 (2020-04-23)
 
 * 正式リリース

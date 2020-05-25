@@ -39,10 +39,6 @@ https://hotel.testplanisphere.dev/
 
 * Ruby 2.6
 * Google Chrome
-* [ChromeDriver](https://chromedriver.chromium.org/downloads)
-
-ChromeDriverはダウンロードして環境変数`PATH`の通った場所に置いてください。
-Download Chromedriver and place it in the System `PATH`.
 
 #### 依存ライブラリのインストール / Install Dependencies
 

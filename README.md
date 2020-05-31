@@ -61,6 +61,14 @@ bundle exec rake rubocop
 
 ### 変更履歴 / Changelog
 
+#### v1.2.0 (2020-05-31)
+
+* [#12](https://github.com/testplanisphere/hotel-example-capybara/pull/12) webdrivers gemを導入
+* [#14](https://github.com/testplanisphere/hotel-example-capybara/pull/14) Dependabotを導入
+* [#15](https://github.com/testplanisphere/hotel-example-capybara/pull/15) Bump rubocop from 0.82.0 to 0.84.0
+* [#16](https://github.com/testplanisphere/hotel-example-capybara/pull/16) Bump capybara from 3.32.1 to 3.32.2
+* [#18](https://github.com/testplanisphere/hotel-example-capybara/pull/18) Github actions/cacheをv2にアップデート
+
 #### v1.1.0 (2020-04-29)
 
 * [#3](https://github.com/testplanisphere/hotel-example-capybara/pull/3) Github ActionsにmacOSとWindowsランナーを追加

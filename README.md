@@ -61,6 +61,15 @@ bundle exec rake rubocop
 
 ### 変更履歴 / Changelog
 
+#### v2020.6.0 (2020-06-30)
+
+* [#20](https://github.com/testplanisphere/hotel-example-capybara/pull/20) Bump webdrivers from 4.3.0 to 4.4.0
+* [#21](https://github.com/testplanisphere/hotel-example-capybara/pull/21) Bump rubocop from 0.84.0 to 0.85.0
+* [#22](https://github.com/testplanisphere/hotel-example-capybara/pull/22) Bump webdrivers from 4.4.0 to 4.4.1
+* [#24](https://github.com/testplanisphere/hotel-example-capybara/pull/24) *Security* Bump rack from 2.2.2 to 2.2.3
+* [#25](https://github.com/testplanisphere/hotel-example-capybara/pull/25) Bump capybara from 3.32.2 to 3.33.0
+* [#26](https://github.com/testplanisphere/hotel-example-capybara/pull/26) Bump rubocop from 0.85.0 to 0.86.0
+
 #### v1.2.0 (2020-05-31)
 
 * [#12](https://github.com/testplanisphere/hotel-example-capybara/pull/12) webdrivers gemを導入

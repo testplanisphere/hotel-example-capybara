@@ -60,6 +60,13 @@ bundle exec rake rubocop
 
 ### 変更履歴
 
+#### v2020.7.0 (2020-07-26)
+
+* [#30](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/30) Bump rubocop from 0.86.0 to 0.88.0
+* [#31](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/31) Update Dependabot config file
+* [#32](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/32) update actions and dependabot
+* [#35](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/35) move to ja site
+
 #### v2020.6.0 (2020-06-30)
 
 * [#20](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/20) Bump webdrivers from 4.3.0 to 4.4.0

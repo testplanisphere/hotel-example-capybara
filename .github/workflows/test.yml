@@ -3,7 +3,7 @@ name: capybara-ja
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
   schedule:
     - cron: '20 3 * * *'

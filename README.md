@@ -1,6 +1,6 @@
 # hotel-example-capybara-ja
 
-![capybara-ja](https://github.com/testplanisphere/hotel-example-capybara-ja/workflows/capybara-ja/badge.svg)
+[![capybara-ja](https://github.com/testplanisphere/hotel-example-capybara-ja/actions/workflows/test.yml/badge.svg)](https://github.com/testplanisphere/hotel-example-capybara-ja/actions/workflows/test.yml)
 
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
 
@@ -59,6 +59,20 @@ bundle exec rake rubocop
 ```
 
 ### 変更履歴
+
+#### v2021.2.0 (2021-02-28)
+
+* [#47](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/47) Bump site_prism from 3.4.2 to 3.7
+* [#50](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/50) Bump rspec from 3.9.0 to 3.10.0
+* [#61](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/61) Bump rake from 13.0.1 to 13.0.3
+* [#67](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/67) Bump capybara from 3.33.0 to 3.35.3
+* [#68](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/68) Bump rubocop from 0.92.0 to 1.9.1
+* [#71](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/71) Update branch name
+* [#72](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/72) Update cache setting
+* [#73](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/73) Bump webdrivers from 4.4.1 to 4.5.0
+* [#74](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/74) Bump ruby from 2.6 to 2.7
+* [#75](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/75) Bump rubocop from 1.9.1 to 1.10.0
+* [#76](https://github.com/testplanisphere/hotel-example-capybara-ja/pull/76) Bump site_prism from 3.7 to 3.7.1
 
 #### v2020.9.0 (2020-09-30)
 
